@@ -60,8 +60,8 @@ function createAndAppendTodo(todoItem){
     deleteContainerEl.classList.add("delete-icon-container", "delete-icon");
     labelContainerEl.appendChild(deleteContainerEl);
 
-    let deleteEl = document.createElement("i");
-    deleteEl.classList.add("fa-solid" , "fa-trash-can");
+    let deleteEl = document.createElement("img");
+    deleteEl.src = "./images/trash.svg";
     deleteContainerEl.appendChild(deleteEl);
 
     deleteEl.onclick = function(){
